@@ -1,0 +1,99 @@
+
+
+/* Base Styles */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 64px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scroll Utilities */
+.smooth-scroll {
+  transition: scroll-position 0.3s ease;
+}
+
+.scroll-mt {
+  scroll-margin-top: 80px;
+}
+
+/* Mobile Menu Styles */
+@media (max-width: 768px) {
+  .ant-menu-vertical {
+    border-right: none !important;
+  }
+
+  .ant-menu-item {
+    padding: 12px 24px !important;
+    margin: 0 !important;
+  }
+
+  .ant-menu-item:active {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .ant-menu-item-selected {
+    background-color: rgba(72, 184, 233, 0.2) !important;
+  }
+
+  .ant-menu-item-selected span {
+    color: #48b8e9 !important;
+    font-weight: 500;
+  }
+
+  .ant-menu-item:hover span {
+    color: #48b8e9 !important;
+  }
+
+  .ant-menu-item-active {
+    background-color: rgba(72, 184, 233, 0.1) !important;
+  }
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
